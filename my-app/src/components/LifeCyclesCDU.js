@@ -29,7 +29,7 @@ export class LifeCyclesCDU extends Component {
             <div>
                 <h1>{this.state.greeting}</h1>
                 <button onClick={this.updateGreeting}>Update Greeting</button>
-                <LifeCyclesCDUChild />
+                <LifeCyclesCDUChild parentGreeting={this.state.greeting}/>
             </div>
         )
     }
